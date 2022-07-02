@@ -1,0 +1,41 @@
+#code-edit{
+    resize: none;
+    height: 500px;
+    width: 98%;
+    color: rgb(0,110,255);
+    background-color: black;
+    font-size: larger;
+    padding: 1%;
+}
+#preview{
+    padding: 1%;
+    border: 1px solid black;
+}
+#title{
+    width: 99.5%;
+    height: 30px;
+    resize: none;
+}
+@media print{
+    #code-edit{
+        resize: none;
+        height: 500px;
+        width: 98%;
+        color: black;
+        font-size: larger;
+        padding: 1%;
+        border: none;
+    }
+    #preview,#save{
+        display: none;
+    }
+    #title{
+        width: 100%;
+        height: auto;
+        border: none;
+        text-align: center;
+        font-size: x-large;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+}
