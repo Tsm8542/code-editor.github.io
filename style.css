@@ -11,10 +11,27 @@
     padding: 1%;
     border: 1px solid black;
 }
+#title::placeholder{
+    color: black;
+    font-size: larger;
+}
 #title{
+    color: black;
+    background-color: yellow;
     width: 99.5%;
-    height: 30px;
+    height: 25px;
     resize: none;
+}
+.menu{
+    background-color: blue;
+    padding: 10px;
+}
+#save{
+    background-color: yellow;
+    color: black;
+    border: none;
+    height: 50px;
+    width: 50px;
 }
 @media print{
     #code-edit{
@@ -26,7 +43,7 @@
         padding: 1%;
         border: none;
     }
-    #preview,#save{
+    #preview,.menu{
         display: none;
     }
     #title{
