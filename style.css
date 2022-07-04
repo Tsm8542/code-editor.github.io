@@ -1,42 +1,55 @@
+html{
+    background-color: black;
+}
+#code-edit::selection{
+    background-color: rgb(24,48,48);
+    color: aqua;
+}
+#title::selection{
+    background-color: black;
+    color: rgb(0, 255, 0);
+}
 #code-edit{
+    border: 1px solid white;
     resize: none;
     height: 500px;
     width: 98%;
-    color: rgb(0,110,255);
+    color: rgb(0, 255, 0);
     background-color: black;
     font-size: larger;
     padding: 1%;
 }
 #preview{
+    background-color: white;
     padding: 1%;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 #title::placeholder{
-    color: black;
+    color: aqua;
     font-size: larger;
 }
 #title{
-    color: black;
-    background-color: yellow;
+    border: 1px solid white;
+    color: aqua;
+    background-color: rgb(24,48,48);
     width: 99.5%;
     height: 25px;
     resize: none;
 }
 .menu{
-    background-color: blue;
+    background-color: black;
     padding: 10px;
 }
 #save{
-    background-color: yellow;
-    color: black;
-    border: none;
+    background-color: black;
+    color: aqua;
+    border: 1px solid cyan;
     height: 50px;
     width: 50px;
 }
 @media print{
     #code-edit{
-        resize: none;
-        height: 500px;
+        overflow: hidden;
         width: 98%;
         color: black;
         font-size: larger;
@@ -46,7 +59,11 @@
     #preview,.menu{
         display: none;
     }
+    #title::placeholder{
+        color: black;
+    }
     #title{
+        color: black;
         width: 100%;
         height: auto;
         border: none;
